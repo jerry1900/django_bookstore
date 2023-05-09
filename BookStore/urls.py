@@ -22,4 +22,9 @@ from django.urls import path
 from newapp import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),path('test/',views.test_html),]
+    path('admin/', admin.site.urls),
+    path('test/',views.test_html,name='test'),
+    path('test_another/',views.test_another),
+    path('hello_web/',views.hello_web),
+
+]
